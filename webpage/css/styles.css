@@ -1,0 +1,407 @@
+/*
+ * styles.css
+
+ *
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family:  newsreader, serif;
+	color: #000000;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding-bottom: 50px; }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+i {
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	color: #000000;
+}
+
+img {
+    width: 100%;
+    max-width:600px;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    /* Added a max-width so that this one style block works on all devices */
+    max-width: 1200px;
+    /* Margin to center the container when it's not the full width */
+    margin: 0 auto;
+}
+
+.img_holder,
+.text {
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+   .mobile{
+     display: block;
+   }
+   .tablet{
+     display: none;
+   }
+
+   .desktop{
+     display: none;
+   }
+
+   /* Responsive image display - mobile first */
+.mobile{
+	display:block;
+}
+
+.tablet{
+	display:none;
+}
+
+.desktop{
+	display:none;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+	.mobile{
+		display:none;
+	}
+	.tablet{
+		display:block;
+	}
+	.desktop{
+		display:none;
+	}
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+	.mobile{
+		display:none;
+	}
+	.tablet{
+		display:none;
+	}
+	.desktop{
+		display:block;
+	}
+}
+
+/* Mobile styles */
+@media (max-width:480px) {
+	.content{
+		width:90%;
+	}
+	.mobile{
+		display:block;
+	}
+	.tablet{
+		display:none;
+	}
+	.desktop{
+		display:none;
+	}
+	p{
+		font-size: 0.875rem;
+		padding-bottom: 1em;
+	}
+	.button-container{
+		text-align: center;
+	}
+
+	h1 {
+	    font-size: 1.25rem;
+	    line-height: 1em;
+	    margin-bottom: 0.9375em;
+	    margin-top: 0.9375em;
+	}
+
+}
+
+/* Your styles go here */
+
+
+h1{ font-family: Helvetica, sans-serif;
+	font-size: 1.875rem;
+	font-weight: bold;
+	color:#37424A;
+	text-align: left;
+	line-height: 2em;
+	margin-bottom: 0.625em;
+	margin-top: 1.25em;
+}
+
+h2 { font-family: newsreader, serif;
+	font-size: 1.125rem;
+	color:#323332;
+	text-align: left;
+	line-height: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 0.625em;
+	}
+
+a {
+   font-family: Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	text-decoration: underline;
+}
+
+.first-graph:first-letter {
+	float: left;
+	color: #37424A;
+	font-size: 2.5rem;
+	line-height: 1em;
+	padding-top: 0.25em;
+	padding-right: 0.625em;
+	padding-left: 0.1875em;
+	font-family: newsreader, serif;
+}
+
+
+ p{
+    font-family:  Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #000000;
+    padding-bottom: 1.5em;
+
+
+}
+
+/* flexbox code! */
+div.wrap{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.25rem;
+}
+
+.wrap p{
+	font-family: Helvetica, sans-serif;
+	color: #000000;
+	font-size: 0.875rem;
+	line-height: 1.2em;
+}
+
+h1{
+	font-family: Helvetica, sans-serif;
+	color: #363636;
+	font-size: 1.25rem;
+	margin-bottom: 1.25em;
+}
+
+.item{
+	width: 100%;
+	max-width: 700px;
+}
+
+
+.content{
+	width:100%;
+	margin:0 auto;
+	max-width:600px;
+	text-align: justify;
+	color: #f2efe9;
+}
+
+.chart{ padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+
+}
+
+
+.button {
+	font-family:'Source Sans Pro', Helvetica, Arial, sans-serif;
+	color: #fff ;
+    background-color:  #FFA500;
+    font-weight: normal;
+	display: inline-block;
+    padding: 0.375em 0.75em;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #7c7c7d;
+    border-radius: 4px;
+}
+
+.button:hover {
+  background: #888;
+  text-decoration: none;
+
+}
+
+
+/* Responsive image display - mobile first */
+.mobile{
+	display:block;
+}
+
+.tablet{
+	display:none;
+}
+
+.desktop{
+	display:none;
+}
+
+.legend{
+	width:100%;
+}
+
+.legend-text{
+	 float:left;
+}
+
+.legend-box{
+    padding-right: 10px;
+    float: left;
+    width: 46%;
+}
+
+.footnote{
+	font-size: 0.8em;
+    color: #888;
+    line-height: 1.5em;
+    clear: both;
+}
+
+.byline{
+	font-size: 0.8em;
+	color: blue;
+	line-height: 1.5em;
+}
+
+/* Media queries */
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+	.mobile{
+		display:none;
+	}
+	.tablet{
+		display:block;
+	}
+	.desktop{
+		display:none;
+	}
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+	.mobile{
+		display:none;
+	}
+	.tablet{
+		display:none;
+	}
+	.desktop{
+		display:block;
+	}
+}
+
+/* Mobile styles */
+@media (max-width:480px) {
+	.content{
+		width:90%;
+	}
+	.mobile{
+		display:block;
+	}
+	.tablet{
+		display:none;
+	}
+	.desktop{
+		display:none;
+	}
+	p{
+		font-size:14px;
+		padding-bottom: 1em;
+	}
+	.button-container{
+		text-align: center;
+	}
+
+	h1 {
+	    font-size: 1.25rem;
+	    line-height: 1em;
+	    margin-bottom: 0.9375em;
+	    margin-top: 0.9375em;
+	}
+
+}
+
+/*fonts*/
+
+.newsreader {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spline-sans {
+  font-family: "Spline Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Chart colors*/
