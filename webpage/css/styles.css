@@ -198,7 +198,7 @@ a {
 	font-size: 2.5rem;
 	line-height: 1em;
 	padding-top: 0.25em;
-	padding-right: 0.625em;
+	padding-right: 0.5em;
 	padding-left: 0.1875em;
 	font-family: newsreader, serif;
 }
@@ -329,6 +329,15 @@ h1{
 	line-height: 1.5em;
 }
 
+.box{
+	width: 100%;
+	border: 1px solid #7c7c7d;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 1.25rem;
+}
+
+
 /* Media queries */
 
 /* Tablet */
@@ -358,9 +367,9 @@ h1{
 }
 
 /* Mobile styles */
-@media (max-width:480px) {
+@media (max-width:400px) {
 	.content{
-		width:90%;
+		width:80%;
 	}
 	.mobile{
 		display:block;
